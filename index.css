@@ -1,0 +1,189 @@
+    /*HEADER*/
+
+    header h1 {
+        font-size: 35px;
+        color: green;
+        padding-left: 20px;
+    }
+    header ul {
+        display: flex;
+    }
+    header ul li a {
+        margin-right: 40px;
+        color: white;
+        text-decoration: underline;
+        font-size: 17px;
+    }
+
+
+    #topbar {
+        position: fixed;
+        width: 100%;
+        height: 55px;
+        top: 0;
+        left: 0;
+        background-color: black;
+        box-shadow: none;
+        transition: all 0.3s ease-in-out;
+        z-index: 1000;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+
+    /* Estil quan es fa scroll, canviar color */
+    #topbar.scrolled {
+        background-color: midnightblue;
+    }
+
+/* ESTIL PER PANTALLES AMB AMPLADA SUPERIOR A 500px */
+@media (min-width: 500px) {
+    body{
+        background-color: lightyellow;
+        font-family: "Arial";
+    }
+
+    /*MAIN*/
+    main {
+        background-color: lightyellow;
+    }
+
+    .top {
+        display: grid ;
+        grid-template-columns: [colm1] 33% [colm2] 33% [colm3] 33% [colm-end] ;
+        grid-template-rows: [row1] 50% [row2] 50% [row3] ;
+    }
+
+    .bloc_bosc {
+        background-image: url("imatges_html/bosque.jpg");
+        background-size: cover;
+        color: white;
+        padding: 30px;
+    }
+
+
+    p strong, p strong a {
+        color: black;
+        text-decoration: none;
+        font-size: 18px;
+    }
+    .remarcar a {
+        color: black;
+        text-decoration: none;
+    }
+
+    p a {
+        margin-left: 10px;
+    }
+
+    .tortuga {
+        background-color: gold;
+        border: solid black 3px;
+        grid-column-start: colm1;
+        grid-column-end: colm2;
+        grid-row-start: row1;
+        grid-row-end: row2;
+    }
+
+    .tortuga img, .lludria img, .ratpenat img{
+        padding-left: 10px;
+        margin-bottom: 25px;
+
+    }
+
+    .lludria {
+        background-color: gold;
+        border: solid black 3px;
+        grid-column-start: colm3;
+        grid-column-end: colm-end;
+        grid-row-start: row1;
+        grid-row-end: row2;
+    }
+
+    .ratpenat {
+        background-color: gold;
+        border: solid black 3px;
+        grid-column-start: colm2;
+        grid-column-end: colm3;
+        grid-row-start: row2;
+        grid-row-end: row3;
+    }
+
+    /*FOOTER*/
+
+    .biblio {
+        margin-top: 35px;
+        background-color: lightgray;
+        color: black;
+        padding: 20px;
+    }
+
+    footer {
+        background-color: black;
+        color: white;
+        padding: 20px;
+
+    }
+
+    footer ul li a {
+        color: white;
+    }
+
+
+}
+
+/* ESTIL PER PANTALLES AMB AMPLADA MENOR A 500px */
+@media (max-width: 499px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: lightyellow;
+        text-align: center;
+        font-family: "Arial";
+    }
+    .bloc_bosc {
+        background-image: url("imatges_html/bosque.jpg");
+        background-size: cover;
+        color: white;
+        padding: 30px;
+    }
+
+    .tortuga, .lludria, .ratpenat {
+        background-color: gold;
+        margin-bottom: 25px;
+        border: solid black 3px;
+    }
+    .biblio {
+        background-color: lightgray;
+        width: 95%;
+        text-align: center;
+        padding: 10px;
+    }
+
+    footer {
+        color: white;
+        background-color: black;
+    }
+
+    footer ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+
+    footer ul li a {
+        color: white;
+
+    }
+
+
+}
+
+
+
+

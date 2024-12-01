@@ -1,0 +1,52 @@
+body{
+    background-color: lightyellow;
+    font-family: "Arial";
+}
+
+/*HEADER*/
+header {
+    background-color: black;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1 {
+    font-size: 35px;
+    color: green;
+    padding-left: 20px;
+}
+header ul {
+    display: flex;
+}
+header ul li a {
+    margin-right: 40px;
+    color: white;
+    text-decoration: underline;
+    font-size: 17px;
+}
+
+/*ERRORS*/
+
+.error {
+    color: red;
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+
+/* EVENT DE CAMPS DEL FORMULARI
+
+/* Estat inicial (ocults) */
+form > * {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease-in-out;
+}
+
+/* Estat final (visible) */
+form > *.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
